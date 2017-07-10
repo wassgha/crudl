@@ -37,7 +37,7 @@ CRUDL is a React application for rapidly building an admin interface based on yo
 * [Credits & Links](#credits--links)
 
 ## Architecture
-The CRUDL architecture (depicted below) consists of three logical layers. The connectors, views, and the react-redux frontend. We use React and Redux for the frontend, which consists of different views such as *list*, *add*, and *change* view.  The purpose of the connectors layer is to provide the views with a unified access to different APIs like REST or GraphQL. You configure the connectors, the fileds, and the views by providing a [admin](#admin).
+The CRUDL architecture (depicted below) consists of three logical layers. The connectors, views, and the react-redux frontend. We use React and Redux for the frontend, which consists of different views such as *list*, *add*, and *change* view.  The purpose of the connectors layer is to provide the views with a unified access to different APIs like REST or GraphQL. You configure the connectors, the fields, and the views by providing an [admin](#admin).
 ```
 +-----------------------+
 |     React / Redux     |     
