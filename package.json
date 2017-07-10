@@ -32,6 +32,7 @@
   "homepage": "http://crudl.io",
   "files": [
     "README.md",
+    "LICENSE",
     "lib",
     "dist"
   ],

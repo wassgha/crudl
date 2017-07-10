@@ -1,6 +1,8 @@
 # CHANGELOG
 
-## 0.3.0 (not yet released)
+## 0.4.0 (not yet released)
+
+## 0.3.0 (2017-07-10)
 
 * REMOVED: Connectors were removed from crudl's core. They are now a standalone NPM package. They provide an extensible way to access different APIs (e.g. REST, GraphQl). Currently there are two connector packages available: [basic and general connector package](https://github.com/crudlio/crudl-connectors-base) and [Django REST Framework connectors](https://github.com/crudlio/crudl-connectors-drf).
 
