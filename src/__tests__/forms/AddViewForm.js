@@ -63,6 +63,8 @@ const props = {
     anyTouched: false,
     form: 'add-form',
     watch: jest.fn,
+    onAdd: jest.fn,
+    onEdit: jest.fn,
 }
 const handleSubmit = jest.fn()
 props.handleSubmit = handleSubmit

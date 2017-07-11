@@ -97,6 +97,8 @@ const props = {
     valid: true,
     anyTouched: false,
     form: 'change-form',
+    onAdd: jest.fn,
+    onEdit: jest.fn,
 }
 const handleSubmit = jest.fn()
 props.handleSubmit = handleSubmit

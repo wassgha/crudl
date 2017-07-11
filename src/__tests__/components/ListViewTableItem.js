@@ -5,6 +5,7 @@ import { shallow } from 'enzyme'
 import ListViewItem from '../../components/ListViewTableItem'
 
 const props = {
+    itemId: 'id',
     fields: [
         {
             label: 'Name',

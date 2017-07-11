@@ -17,6 +17,7 @@ const desc = {
     readOnly: false,
     required: false,
     validate: jest.fn,
+    lazy: jest.fn,
 }
 
 const p = {

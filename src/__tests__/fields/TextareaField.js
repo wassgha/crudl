@@ -17,6 +17,8 @@ const desc = {
     validate: jest.fn,
     disabled: false,
     readOnly: false,
+    hidden: false,
+    getValue: jest.fn,
 }
 
 const p = {

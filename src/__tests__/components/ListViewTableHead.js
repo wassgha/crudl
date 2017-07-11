@@ -7,24 +7,24 @@ import ListViewHeader from '../../components/ListViewTableHead'
 const props = {
     fields: [
         {
-            key: 'name',
+            // key: 'name',
             label: 'Name',
             name: 'name',
             main: true,
             sortKey: 'slug',
             sortable: true,
             sorted: 'ascending',
-            sortpriotity: 1,
+            sortpriority: 1,
         },
         {
-            key: 'slug',
+            // key: 'slug',
             label: 'Slug',
             name: 'slug',
             main: false,
             sortKey: 'slug',
             sortable: false,
             sorted: 'none', /* FIXME (Vaclav): why should this be "none"? */
-            sortpriotity: undefined,
+            sortpriority: undefined,
         },
     ],
     sorting: [
