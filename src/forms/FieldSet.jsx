@@ -51,7 +51,7 @@ class FieldSet extends React.Component {
         const fields = asArray(onChange.in).map(name => props.fields[name])
 
         // Set the props
-        Promise.methode(asFunc(onChange.setProps))(...fields)
+        Promise.method(asFunc(onChange.setProps))(...fields)
         .then((newProps) => {
             this.setState(newProps)
         })
@@ -80,7 +80,7 @@ class FieldSet extends React.Component {
                         ><h3>{desc.title}</h3></header>}
                     <div className="fieldset" id={id} role="region" tabIndex="-1" aria-hidden={!desc.expanded}>
                         {desc.description && <div className="fieldset-description"><div>{desc.description}</div></div>}
-                        {desc.fields.map(d =>
+                        {desc.fields.map(d => (
                             <Field
                                 key={d.name}
                                 name={d.name}
@@ -91,7 +91,7 @@ class FieldSet extends React.Component {
                                 onEdit={onEdit}
                                 component={FieldLoader}
                                 />
-                        )}
+                        ))}
                     </div>
                 </section>
             )
