@@ -2,6 +2,8 @@
 
 ## 0.4.0 (not yet released)
 
+* CHANGED: The data normalization flow is now: `get` action > descriptor `normalize` > field `normalize` > component state. That reflects the denormalization flow: `save` action < descritor `denormalize` < field `denormalize` < component state. Adresses the issue #46.
+
 ## 0.3.0 (2017-07-10)
 
 * REMOVED: Connectors were removed from crudl's core. They are now a standalone NPM package. They provide an extensible way to access different APIs (e.g. REST, GraphQl). Currently there are two connector packages available: [basic and general connector package](https://github.com/crudlio/crudl-connectors-base) and [Django REST Framework connectors](https://github.com/crudlio/crudl-connectors-drf).
