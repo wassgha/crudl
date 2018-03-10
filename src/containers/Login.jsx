@@ -4,6 +4,7 @@ import { withRouter } from 'react-router'
 import { routerShape, locationShape } from 'react-router/lib/PropTypes'
 import { injectIntl, intlShape } from 'react-intl'
 import { connect } from 'react-redux'
+import { isMobile } from 'react-device-detect'
 
 import LoginForm from '../forms/LoginForm'
 import getValidator from '../utils/getValidator'
@@ -13,6 +14,7 @@ import { req, options } from '../Crudl'
 import { loginShape } from '../PropTypes'
 import messages from '../messages/login'
 import handleErrors from '../utils/handleErrors'
+import { showNavigation } from '../actions/frontend'
 
 /* FIXME (Vaclav): Shouldn't this be a component instead? */
 
@@ -62,6 +64,9 @@ class Login extends React.Component {
             dispatch(successMessage(intl.formatMessage(messages.loginSuccess)))
             const next = this.props.location.query.next || options.basePath
             this.props.router.push(next)
+            if (!isMobile) {
+              this.props.dispatch(showNavigation())
+            }
         })
         .catch((e) => {
             dispatch(errorMessage(intl.formatMessage(messages.loginFailure)))
