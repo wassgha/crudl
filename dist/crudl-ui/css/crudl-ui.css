@@ -4603,7 +4603,7 @@ ol.pagination li.current, ol.pagination li.current:hover {
 }
 
 #navigation ul.account .user:before {
-  content: "face";
+  content: "account_circle";
 }
 
 #navigation ul.account .logout {

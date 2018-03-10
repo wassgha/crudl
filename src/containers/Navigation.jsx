@@ -49,9 +49,9 @@ export class Navigation extends React.Component {
         }
         // If "ESC" then blur searchfield, close listbox and destroy search
         // otherwise check if target hasParentId
-        if (e.key === 'Escape' || e.keyCode === 27) {
+        if ((e.key === 'Escape' || e.keyCode === 27) && isMobile) {
             this.props.dispatch(hideNavigation())
-        } else if (!e.key) {
+        } else if (!e.key && isMobile) {
             // Use parentId to find out if event.target has a parent with a certain id
             const parentId = 'navigation'
             // Close all results if event.target is not a child of parentId
