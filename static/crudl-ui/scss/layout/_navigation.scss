@@ -188,7 +188,7 @@
         }
         .user {
             &:before {
-                @include icon("face");
+                @include icon("account_circle");
             }
         }
         .logout {
