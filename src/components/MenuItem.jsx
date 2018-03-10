@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { routerShape } from 'react-router/lib/PropTypes'
 import { autobind } from 'core-decorators'
+import { isMobile } from 'react-device-detect'
 
 import { hideNavigation } from '../actions/frontend'
 
@@ -21,14 +22,18 @@ class MenuItem extends React.Component {
     handleItemClick() {
         if (this.props.listPath) {
             this.props.router.push(this.props.listPath)
-            this.props.dispatch(hideNavigation())
+            if (isMobile) {
+              this.props.dispatch(hideNavigation())
+            }
         }
     }
 
     handleAddClick() {
         if (this.props.addPath) {
             this.props.router.push(this.props.addPath)
-            this.props.dispatch(hideNavigation())
+            if (isMobile) {
+              this.props.dispatch(hideNavigation())
+            }
         }
     }
 

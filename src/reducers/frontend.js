@@ -1,5 +1,7 @@
 import set from 'lodash/set'
 import cloneDeep from 'lodash/cloneDeep'
+import { isBrowser } from 'react-device-detect'
+
 import { types } from '../actions/frontend'
 
 /**
@@ -7,7 +9,7 @@ import { types } from '../actions/frontend'
  */
 const initialState = {
     navigation: {
-        visible: false,
+        visible: isBrowser,
     },
     filters: {
         visible: false,

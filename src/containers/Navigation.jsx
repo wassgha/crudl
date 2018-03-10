@@ -3,6 +3,7 @@ import { IndexLink, withRouter } from 'react-router'
 import { connect } from 'react-redux'
 import { FormattedMessage } from 'react-intl'
 import { routerShape } from 'react-router/lib/PropTypes'
+import { isMobile } from 'react-device-detect'
 
 import { resolvePath, hasPermission } from '../Crudl'
 import { toggleNavigation, hideNavigation } from '../actions/frontend'
@@ -68,12 +69,16 @@ export class Navigation extends React.Component {
 
     handleItemClick() {
         this.props.dispatch(setActiveFilters([]))
-        this.props.dispatch(hideNavigation())
+        if (isMobile) {
+          this.props.dispatch(hideNavigation())
+        }
     }
 
     handleAdd(addViewPath) {
         this.props.router.push(resolvePath(addViewPath))
-        this.props.dispatch(hideNavigation())
+        if (isMobile) {
+          this.props.dispatch(hideNavigation())
+        }
     }
 
     isActive(viewIDs) {
@@ -129,7 +134,6 @@ export class Navigation extends React.Component {
                                 <IndexLink
                                     to={resolvePath()}
                                     activeClassName="active"
-                                    onClick={() => this.props.dispatch(hideNavigation())}
                                     >Dashboard</IndexLink>
                             </li>
                         </ul>
