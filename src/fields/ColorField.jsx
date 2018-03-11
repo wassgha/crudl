@@ -19,7 +19,7 @@ class ColorField extends React.Component {
       super(props)
       this.state = {
         colorPicker: false,
-        color: this.props.input.value,
+        color: this.props.input.value || '#33b6c2',
       }
     }
 
