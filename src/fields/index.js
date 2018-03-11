@@ -3,6 +3,7 @@ import AutocompleteField from './AutocompleteField'
 import AutocompleteMultipleField from './AutocompleteMultipleField'
 import CheckboxField from './CheckboxField'
 import DateField from './DateField'
+import ColorField from './ColorField'
 import DateTimeField from './DateTimeField'
 import PasswordField from './PasswordField'
 import RadioGroup from './RadioGroup'
@@ -23,6 +24,7 @@ export default {
     'Autocomplete': AutocompleteField,
     'AutocompleteMultiple': AutocompleteMultipleField,
     'Checkbox': CheckboxField,
+    'Color': ColorField,
     'Date': DateField,
     'Datetime': DateTimeField,
     'File': FileField,

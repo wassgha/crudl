@@ -282,7 +282,8 @@ input, select {
 [role=button].action-clear:before, button.action-date-range:before,
 [role=button].action-date-range:before, button.action-date-today:before,
 [role=button].action-date-today:before, button.action-access-time:before,
-[role=button].action-access-time:before, button.action-delete:before,
+[role=button].action-access-time:before, button.action-color-fill:before,
+[role=button].action-color-fill:before, button.action-delete:before,
 [role=button].action-delete:before, button.action-open-in-new:before,
 [role=button].action-open-in-new:before, button.action-link-external:before,
 [role=button].action-link-external:before, button.action-load-more:before,
@@ -1620,7 +1621,8 @@ button.icon-only .material-icons, button.icon-only button.action-add:before, but
 [role=button].action-clear:before, button.icon-only button.action-date-range:before, button.icon-only
 [role=button].action-date-range:before, button.icon-only button.action-date-today:before, button.icon-only
 [role=button].action-date-today:before, button.icon-only button.action-access-time:before, button.icon-only
-[role=button].action-access-time:before, button.icon-only button.action-delete:before, button.icon-only
+[role=button].action-access-time:before, button.icon-only button.action-color-fill:before, button.icon-only
+[role=button].action-color-fill:before, button.icon-only button.action-delete:before, button.icon-only
 [role=button].action-delete:before, button.icon-only button.action-open-in-new:before, button.icon-only
 [role=button].action-open-in-new:before, button.icon-only button.action-link-external:before, button.icon-only
 [role=button].action-link-external:before, button.icon-only button.action-load-more:before, button.icon-only
@@ -1661,6 +1663,9 @@ tbody button.icon-only th.boolean.false:before, button.icon-only thead th ul.sor
 [role=button].icon-only button.action-access-time:before,
 [role=button].icon-only
 [role=button].action-access-time:before,
+[role=button].icon-only button.action-color-fill:before,
+[role=button].icon-only
+[role=button].action-color-fill:before,
 [role=button].icon-only button.action-delete:before,
 [role=button].icon-only
 [role=button].action-delete:before,
@@ -1753,7 +1758,8 @@ button.boundless .material-icons, button.boundless button.action-add:before, but
 [role=button].action-clear:before, button.boundless button.action-date-range:before, button.boundless
 [role=button].action-date-range:before, button.boundless button.action-date-today:before, button.boundless
 [role=button].action-date-today:before, button.boundless button.action-access-time:before, button.boundless
-[role=button].action-access-time:before, button.boundless button.action-delete:before, button.boundless
+[role=button].action-access-time:before, button.boundless button.action-color-fill:before, button.boundless
+[role=button].action-color-fill:before, button.boundless button.action-delete:before, button.boundless
 [role=button].action-delete:before, button.boundless button.action-open-in-new:before, button.boundless
 [role=button].action-open-in-new:before, button.boundless button.action-link-external:before, button.boundless
 [role=button].action-link-external:before, button.boundless button.action-load-more:before, button.boundless
@@ -1794,6 +1800,9 @@ tbody button.boundless th.boolean.false:before, button.boundless thead th ul.sor
 [role=button].boundless button.action-access-time:before,
 [role=button].boundless
 [role=button].action-access-time:before,
+[role=button].boundless button.action-color-fill:before,
+[role=button].boundless
+[role=button].action-color-fill:before,
 [role=button].boundless button.action-delete:before,
 [role=button].boundless
 [role=button].action-delete:before,
@@ -1885,7 +1894,8 @@ button .material-icons, button button.action-add:before, button
 [role=button].action-clear:before, button button.action-date-range:before, button
 [role=button].action-date-range:before, button button.action-date-today:before, button
 [role=button].action-date-today:before, button button.action-access-time:before, button
-[role=button].action-access-time:before, button button.action-delete:before, button
+[role=button].action-access-time:before, button button.action-color-fill:before, button
+[role=button].action-color-fill:before, button button.action-delete:before, button
 [role=button].action-delete:before, button button.action-open-in-new:before, button
 [role=button].action-open-in-new:before, button button.action-link-external:before, button
 [role=button].action-link-external:before, button button.action-load-more:before, button
@@ -1926,6 +1936,9 @@ tbody button th.boolean.false:before, button thead th ul.sort-options li.sort-re
 [role=button] button.action-access-time:before,
 [role=button]
 [role=button].action-access-time:before,
+[role=button] button.action-color-fill:before,
+[role=button]
+[role=button].action-color-fill:before,
 [role=button] button.action-delete:before,
 [role=button]
 [role=button].action-delete:before,
@@ -2047,6 +2060,11 @@ button.action-date-today:before,
 button.action-access-time:before,
 [role=button].action-access-time:before {
   content: "access_time";
+}
+
+button.action-color-fill:before,
+[role=button].action-color-fill:before {
+  content: "format_color_fill";
 }
 
 button.action-delete:before,

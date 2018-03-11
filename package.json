@@ -62,6 +62,7 @@
     "lodash": "^4.16.4",
     "node-uuid": "^1.4.7",
     "react-addons-test-utils": "^15.3.2",
+    "react-color": "^2.14.0",
     "react-device-detect": "^0.1.0",
     "react-intl": "^2.1.5",
     "react-redux": "^4.4.5",
