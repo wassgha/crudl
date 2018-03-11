@@ -76,7 +76,7 @@ class ColorField extends React.Component {
                 <ul role="group" className="buttons">
                     <li><button
                         type="button"
-                        className="action-color-fill icon-only"
+                        className="icon-only"
                         aria-label="Change color"
                         aria-disabled={disabled}
                         disabled={disabled}

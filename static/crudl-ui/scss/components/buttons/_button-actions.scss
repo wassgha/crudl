@@ -55,9 +55,6 @@ button,
     &.action-access-time {
         @include icon-before("access_time", "false");
     }
-    &.action-color-fill {
-        @include icon-before("format_color_fill", "false")
-    }
     &.action-delete {
         @include icon-before("delete", "false");
     }
