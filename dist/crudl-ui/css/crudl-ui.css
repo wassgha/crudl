@@ -2724,7 +2724,7 @@ button.action-collapse-all:before,
 #viewport-content .basefield.field-size-x-small,
 #viewport-content .field-button-group.field-size-x-small,
 #viewport-content .field.field-size-x-small {
-  max-width: 100px;
+  max-width: 130px;
 }
 
 label {
@@ -4753,7 +4753,7 @@ main {
   padding: 0 48px 192px 48px;
   height: auto;
   min-height: 100%;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
 }
 

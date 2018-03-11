@@ -21,7 +21,7 @@ main {
     padding: $viewport-padding;
     height: auto;
     min-height: 100%;
-    overflow: hidden;
+    overflow: visible;
     @extend .overflow-y-scroll;
     background: $viewport-background;
 }

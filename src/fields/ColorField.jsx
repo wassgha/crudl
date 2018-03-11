@@ -48,7 +48,7 @@ class ColorField extends React.Component {
         const popoverStyle = {
           position: 'absolute',
           zIndex: 1000,
-          right: 0,
+          left: 0,
           top: 45,
         }
         const coverStyle = {
