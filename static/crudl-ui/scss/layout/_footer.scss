@@ -19,7 +19,7 @@
     margin: 48px (-$viewport-padding-right) 0 (-$viewport-padding-left);
     padding: 0 2*$viewport-padding-right 0 $viewport-padding-left;
     width: 100%;
-    background: transparentize($color-2-800, .1);
+    background: transparentize($color-2-500, .1);
     [role=group].buttons {
         margin-right: -($viewport-inner-padding-right + $viewport-inner-padding-right);
         li + li {

@@ -86,106 +86,30 @@
 .font-family {
     font-family: $font-family;
 }
-.font-family-slab {
-    font-family: $font-family-slab;
-}
 
 .font-family-thin {
-    font-family: $font-family-thin;
-    font-weight: normal;
+  font-family: $font-family;
+  font-weight: 200;
 }
-.font-family-thin-italic {
-    font-family: $font-family-thin-italic;
-    font-weight: normal;
-}
+
 .font-family-light {
-    font-family: $font-family-light;
-    font-weight: normal;
+  font-family: $font-family;
+  font-weight: 200;
 }
-.font-family-light-italic {
-    font-family: $font-family-light-italic;
-    font-weight: normal;
-}
-.font-family-regular {
-    font-family: $font-family-regular;
-    font-weight: normal;
-}
+
 .font-family-medium {
-    font-family: $font-family-medium;
-    font-weight: normal;
+  font-family: $font-family;
+  font-weight: 300;
 }
-.font-family-medium-italic {
-    font-family: $font-family-medium-italic;
-    font-weight: normal;
+
+.font-family-regular {
+  font-family: $font-family;
+  font-weight: 400;
 }
+
 .font-family-bold {
-    font-family: $font-family-bold;
-    font-weight: normal;
-}
-.font-family-bold-italic {
-    font-family: $font-family-bold-italic;
-    font-weight: normal;
-}
-.font-family-regular-italic {
-    font-family: $font-family-regular-italic;
-    font-weight: normal;
-}
-
-.font-family-slab-thin {
-    font-family: $font-family-slab-thin;
-    font-weight: normal;
-}
-.font-family-slab-light {
-    font-family: $font-family-slab-light;
-    font-weight: normal;
-}
-.font-family-slab-regular {
-    font-family: $font-family-slab-regular;
-    font-weight: normal;
-}
-.font-family-slab-bold {
-    font-family: $font-family-slab-bold;
-    font-weight: normal;
-}
-
-.font-family-mono {
-    font-family: $font-family-mono;
-}
-.font-family-mono-italic {
-    font-family: $font-family-mono-italic;
-    font-weight: normal;
-}
-.font-family-mono-thin {
-    font-family: $font-family-mono-thin;
-    font-weight: normal;
-}
-.font-family-mono-thin-italic {
-    font-family: $font-family-mono-thin-italic;
-    font-weight: normal;
-}
-.font-family-mono-light {
-    font-family: $font-family-mono-light;
-    font-weight: normal;
-}
-.font-family-mono-regular {
-    font-family: $font-family-mono-regular;
-    font-weight: normal;
-}
-.font-family-mono-medium {
-    font-family: $font-family-mono-medium;
-    font-weight: normal;
-}
-.font-family-mono-medium-italic {
-    font-family: $font-family-mono-medium-italic;
-    font-weight: normal;
-}
-.font-family-mono-bold {
-    font-family: $font-family-mono-bold;
-    font-weight: normal;
-}
-.font-family-mono-bold-italic {
-    font-family: $font-family-mono-bold-italic;
-    font-weight: normal;
+    font-family: $font-family;
+    font-weight: 600;
 }
 
 

@@ -21,7 +21,8 @@
     padding-bottom: 100px;
     width: $navigation-width;
     height: 100%;
-    font-family: $font-family-bold;
+    font-family: $font-family;
+    font-weight: 400;
     color: #fff;
     overflow-x: hidden;
     background: $navigation-background;
@@ -82,7 +83,7 @@
         padding-top: 4px;
         min-width: 48px;
         height: 48px;
-        @include button-style($color-2-100, transparent, transparent);
+        @include button-style($color-2-50, transparent, transparent);
         &:hover {
             @include button-style(#fff, transparent, transparent);
         }
@@ -111,9 +112,6 @@
     }
     li {
         position: relative;
-        & + li {
-            border-top: 2px solid darken($navigation-background, 3);
-        }
     }
     li {
         span {
@@ -164,7 +162,7 @@
             position: absolute;
             top: 4px;
             right: 4px;
-            @include button-style($color-2-700, transparent, transparent);
+            @include button-style($color-2-400, transparent, transparent);
             &:hover {
                 @include button-style(#fff, transparent, transparent);
             }
@@ -175,7 +173,6 @@
         bottom: 0;
         padding: 0;
         width: 0;
-        border-top: 2px solid darken($navigation-background, 3);
         background: darken($navigation-background, 3);
         a,
         span {
@@ -193,16 +190,13 @@
         }
         .logout {
             cursor: pointer;
-            color: $color-2-300;
+            color: $color-3-300;
             &:hover {
-                color: $color-2-100;
+                color: $color-3-100;
             }
             &:before {
                 @include icon("power_settings_new");
             }
-        }
-        li + li {
-            border-top: 2px solid $navigation-background;
         }
     }
 
@@ -224,10 +218,10 @@
         h2 {
             z-index: 990;
             width: $navigation-width;
-            background: darken($navigation-background, 3);
+            background: darken($navigation-background, 2);
         }
         button#toggle-navigation {
-            color: desaturate($color-2-600, 30);
+            color: desaturate($color-2-200, 30);
             &:hover {
                 color: #fff;
             }

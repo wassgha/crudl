@@ -14,7 +14,7 @@
     position: relative;
     margin: 8px 0 0;
     @extend .font-size-xs;
-    @extend .font-family-mono;
+    @extend .font-family-regular;
     color: $text-color-quiet;
     .type-checkbox &,
     .type-radiogroup & {

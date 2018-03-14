@@ -37,10 +37,10 @@ $tab-border-width: 4px;
     z-index: 700;
     margin: -55px (-$viewport-padding-right) 48px (-$viewport-padding-left);
     padding: 0 $viewport-padding-right 0 ($viewport-padding-left + $viewport-inner-padding-left);
-    border-top: $tab-border-width solid $color-2-400;
-    border-bottom: $tab-border-width solid $color-2-400;
+    border-top: $tab-border-width solid $color-2-500;
+    border-bottom: $tab-border-width solid $color-2-500;
     // border-bottom: $tab-border-width solid $color-2-600;
-    background: $color-2-400;
+    background: $color-2-500;
 }
 [role=tablist] {
     position: relative;

@@ -27,7 +27,7 @@
     margin: 92px auto 0;
     padding: 24px;
     max-width: 400px;
-    @extend .font-family-mono;
+    @extend .font-family-regular;
     word-break: break-word;
     border-radius: $border-radius;
     border-bottom-right-radius: 2 * $border-radius;

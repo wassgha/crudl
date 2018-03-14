@@ -51,40 +51,7 @@ $rte-line-height: 24px;
 // Fonts: Weights & Styles
 // ----------------------------------------------------------------------------
 
-$font-family: 'Roboto-Regular', Arial, sans-serif;
-$font-family-thin: 'Roboto-Thin', Arial, sans-serif;
-$font-family-light: 'Roboto-Light', Arial, sans-serif;
-$font-family-regular: 'Roboto-Regular', Arial, sans-serif;
-$font-family-medium: 'Roboto-Medium', Arial, sans-serif;
-$font-family-bold: 'Roboto-Bold', Arial, sans-serif;
-
-$font-family-italic: 'Roboto-Italic', Arial, sans-serif;
-$font-family-thin-italic: 'Roboto-ThinItalic', Arial, sans-serif;
-$font-family-light-italic: 'Roboto-LightItalic', Arial, sans-serif;
-$font-family-regular-italic: 'Roboto-RegularItalic', Arial, sans-serif;
-$font-family-medium-italic: 'Roboto-MediumItalic', Arial, sans-serif;
-$font-family-bold-italic: 'Roboto-BoldItalic', Arial, sans-serif;
-
-$font-family-slab: 'RobotoSlab-Regular', Arial, sans-serif;
-$font-family-slab-regular: 'RobotoSlab-Regular', Arial, sans-serif;
-$font-family-slab-thin: 'RobotoSlab-Thin', Arial, sans-serif;
-$font-family-slab-light: 'RobotoSlab-Light', Arial, sans-serif;
-$font-family-slab-bold: 'RobotoSlab-Bold', Arial, sans-serif;
-
-$font-family-mono: 'RobotoMono-Regular', Arial, sans-serif;
-$font-family-mono-thin: 'RobotoMono-Thin', Arial, sans-serif;
-$font-family-mono-light: 'RobotoMono-Light', Arial, sans-serif;
-$font-family-mono-regular: 'RobotoMono-Regular', Arial, sans-serif;
-$font-family-mono-medium: 'RobotoMono-Medium', Arial, sans-serif;
-$font-family-mono-bold: 'RobotoMono-Bold', Arial, sans-serif;
-
-$font-family-mono-italic: 'RobotoMono-Italic', Arial, sans-serif;
-$font-family-mono-thin-italic: 'RobotoMono-ThinItalic', Arial, sans-serif;
-$font-family-mono-light-italic: 'RobotoMono-LightItalic', Arial, sans-serif;
-$font-family-mono-regular-italic: 'RobotoMono-Italic', Arial, sans-serif;
-$font-family-mono-medium-italic: 'RobotoMono-MediumItalic', Arial, sans-serif;
-$font-family-mono-bold-italic: 'RobotoMono-BoldItalic', Arial, sans-serif;
-
+$font-family: 'Nunito', Arial, sans-serif;
 
 
 // Colors
@@ -107,7 +74,7 @@ $color-val-1000: 40%;
 $color-val-1100: 28%;
 
 // Color 1
-$color-1: #7D7F80;
+$color-1: #283A50;
 $color-1-10: mix($color-1, #fff, $color-val-10);
 $color-1-25: mix($color-1, #fff, $color-val-25);
 $color-1-50: mix($color-1, #fff, $color-val-50);
@@ -124,7 +91,7 @@ $color-1-1000: mix($color-1, #000, $color-val-1000);
 $color-1-1100: mix($color-1, #000, $color-val-1100);
 
 // Color 2
-$color-2: #00A4B3;
+$color-2: #34495e;
 $color-2-10: mix($color-2, #fff, $color-val-10);
 $color-2-25: mix($color-2, #fff, $color-val-25);
 $color-2-50: mix($color-2, #fff, $color-val-50);
@@ -156,7 +123,7 @@ $color-3-1000: mix($color-3, #000, $color-val-1000);
 $color-3-1100: mix($color-3, #000, $color-val-1100);
 
 // Color 4
-$color-4: #F2E961;
+$color-4: #F4CA38;
 $color-4-50: mix($color-4, #fff, $color-val-50);
 $color-4-100: mix($color-4, #fff, $color-val-100);
 $color-4-200: mix($color-4, #fff, $color-val-200);
@@ -184,6 +151,21 @@ $color-5-800: mix($color-5, #000, $color-val-800);
 $color-5-900: mix($color-5, #000, $color-val-900);
 $color-5-1000: mix($color-5, #000, $color-val-1000);
 $color-5-1100: mix($color-5, #000, $color-val-1100);
+
+// Color 6
+$color-6: #2c3e50;
+$color-6-50: mix($color-6, #fff, $color-val-50);
+$color-6-100: mix($color-6, #fff, $color-val-100);
+$color-6-200: mix($color-6, #fff, $color-val-200);
+$color-6-300: mix($color-6, #fff, $color-val-300);
+$color-6-400: mix($color-6, #fff, $color-val-400);
+$color-6-500: $color-6;
+$color-6-600: mix($color-6, #000, $color-val-600);
+$color-6-700: mix($color-6, #000, $color-val-700);
+$color-6-800: mix($color-6, #000, $color-val-800);
+$color-6-900: mix($color-6, #000, $color-val-900);
+$color-6-1000: mix($color-6, #000, $color-val-1000);
+$color-6-1100: mix($color-6, #000, $color-val-1100);
 
 
 
@@ -220,7 +202,7 @@ $navigation-width: 320px;
 
 $app-max-width: 1440px;
 $app-background: #fff;
-$navigation-background: $color-2-1000;
+$navigation-background: $color-2-800;
 
 $viewport-background: #fff;
 $viewport-border-color: #ddf0f0;
