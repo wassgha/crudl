@@ -108,6 +108,7 @@ export class Navigation extends React.Component {
                                 <MenuItem
                                     key={listView.id}
                                     label={listView.title}
+                                    icon={listView.icon}
                                     listPath={resolvePath(listView.path)}
                                     addPath={hasAddPermission ? resolvePath(addView.path) : undefined}
                                     isActive={this.isActive(familyIDs)}
@@ -134,7 +135,8 @@ export class Navigation extends React.Component {
                                 <IndexLink
                                     to={resolvePath()}
                                     activeClassName="active"
-                                    >Dashboard</IndexLink>
+                                    ><i className={'mdi mdi-home'} />
+                                      Dashboard</IndexLink>
                             </li>
                         </ul>
                         {menu}

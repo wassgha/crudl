@@ -8,6 +8,7 @@ const listView = Joi.object().provideId().keys({
     // Required
     path: Joi.string().required(),
     title: Joi.string().required(),
+    icon: Joi.string().required(),
     fields: Joi.array().items(listViewField).required(),
     actions: defineActions(['list']).required(),
     // Optional

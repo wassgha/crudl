@@ -4452,6 +4452,10 @@ ol.pagination li.current, ol.pagination li.current:hover {
   background: transparent;
 }
 
+#navigation ul li i {
+  margin-right: 10px;
+}
+
 #navigation ul.account {
   position: fixed;
   bottom: 0;

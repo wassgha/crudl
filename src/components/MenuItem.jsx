@@ -14,6 +14,7 @@ class MenuItem extends React.Component {
         listPath: React.PropTypes.string,
         addPath: React.PropTypes.string,
         label: React.PropTypes.node,
+        icon: React.PropTypes.string,
         isActive: React.PropTypes.bool,
         router: routerShape.isRequired,
         dispatch: React.PropTypes.func.isRequired,
@@ -38,14 +39,18 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        const { label, listPath, addPath, isActive } = this.props
+        const { label, icon, listPath, addPath, isActive } = this.props
         return (
             <li>
                 { listPath &&
                     <a
                         className={isActive && 'active'}
                         onClick={this.handleItemClick}
-                        >{label}
+                        >
+                        {icon &&
+                            <i className={`mdi mdi-${icon}`} />
+                        }
+                        {label}
                     </a>
                 }
                 { addPath &&

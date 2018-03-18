@@ -167,6 +167,9 @@
                 @include button-style(#fff, transparent, transparent);
             }
         }
+        i {
+          margin-right: 10px;
+        }
     }
     &.account {
         position: fixed;
