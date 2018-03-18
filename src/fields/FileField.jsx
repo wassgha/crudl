@@ -101,16 +101,30 @@ class FileField extends React.Component {
 
     render() {
         const { id, disabled, readOnly, input } = this.props
-        const { value, label, previewURL } = input.value
+        const { value, previewURL } = input.value
         const applyReadOnly = !disabled && readOnly
         return (
             <div className="autocomplete listbox" id={`autocomplete-${id}`}>
-                <div role="group" className="field-button-group field-button-inner">
+                <div role="group" className="field-button-group field-button-inner" style={{ maxWidth: 260 }}>
                     <div
                         className="field"
                         aria-controls={id}
                         aria-expanded="false"
-                        ><div className="label">{label}</div>
+                        >
+                        <div
+                            ref={(c) => { this.previewGroup = c }}
+                            className="preview"
+                            aria-hidden={previewURL ? 'false' : 'true'}
+                            >
+                            <img
+                                ref={(c) => { this.preview = c }}
+                                src={previewURL}
+                                height="100"
+                                width="100%"
+                                style={{ objectFit: 'cover' }}
+                                role="presentation"
+                                />
+                        </div>
                         <input
                             type="file"
                             className="filefield"
@@ -120,32 +134,27 @@ class FileField extends React.Component {
                             readOnly={applyReadOnly}
                             disabled={disabled}
                             ref={(c) => { this.fileInput = c }}
+                            style={{ border: 0 }}
                             />
                     </div>
-                    <ul role="group" className="buttons">
+                    <ul role="group" className="buttons" style={{ position: 'absolute', right: 0 }}>
                         {value &&
-                            <li>
+                            <li style={{ borderRadius: 0, border: 0 }}>
                                 <button
                                     type="button"
                                     aria-label="Clear"
                                     className="action-clear icon-only"
                                     onClick={this.handleRemoveItem}
+                                    style={{
+                                      color: 'white',
+                                      textShadow: '0px 0px 20px black',
+                                      border: 0,
+                                      borderRadius: 0,
+                                    }}
                                     >&zwnj;</button>
                             </li>
                         }
                     </ul>
-                </div>
-                <div
-                    ref={(c) => { this.previewGroup = c }}
-                    className="preview"
-                    aria-hidden={previewURL ? 'false' : 'true'}
-                    >
-                    <img
-                        ref={(c) => { this.preview = c }}
-                        src={previewURL}
-                        height="100"
-                        role="presentation"
-                        />
                 </div>
             </div>
         )
